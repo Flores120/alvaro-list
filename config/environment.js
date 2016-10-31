@@ -13,6 +13,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+    apiKey: "AIzaSyAynTzBgNvW_sL7cQS0dNkCwPXGKxDFcOE",
+    authDomain: "alvaro-list.firebaseapp.com",
+    databaseURL: "https://alvaro-list.firebaseio.com",
+    storageBucket: ""
+  },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

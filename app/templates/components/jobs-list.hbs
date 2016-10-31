@@ -1,0 +1,14 @@
+<h3 {{action 'showListings'}}>Jobs</h3>
+{{#if showListings}}
+  <ul>
+    {{#each model as |listing|}}
+      {{#if (eq listing.type "job")}}
+        <li>
+          {{#link-to 'listing' listing.id}}
+            {{listing.author}} -- {{listing.title}}
+          {{/link-to}}
+        </li>
+      {{/if}}
+    {{/each}}
+  </ul>
+{{/if}}
